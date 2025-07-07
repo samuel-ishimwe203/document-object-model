@@ -66,3 +66,12 @@
 .option-btn:hover{
     background: #4b4b7e;
 }
+
+.option-btn.correct{
+    background-color: #3cb371;
+
+}
+.option-btn.wrong{
+    background-color: #e74c3c;
+
+}
