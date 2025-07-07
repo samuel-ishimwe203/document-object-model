@@ -42,7 +42,8 @@ const quizData= [
 let questions= [...quizData].sort(()=>Math.random()-0.5);
 let currentQuestion= 0;
 let score=0;
-
+let timer;
+let timeleft;
 const questionElement=document.getElementById('question');
 const optionsElement=document.getElementById('options');
 const nextBtn=document.getElementById('next-btn');
@@ -51,6 +52,12 @@ const resultEl=document.getElementById('result');
 
 function loadQuestion(){
     
+    clearInterval(timer);
+    timeleft=15;
+    updateTimer();
+    timer=setInterval(countDown,1000);
+
+
     const qus=questions[currentQuestion];
      questionElement.textContent=`Q${currentQuestion +1}. ${qus.question}`;
     optionsElement.innerHTML="";
@@ -110,5 +117,18 @@ function showResult(){
      <button onclick="location.reload()"> Restart Quiz</button>`    
 }
 
+function countDown(){
+timeleft--;
+updateTimer();
+if(timeleft===0){
+    clearInterval(timer)
+    selectAnswer(questions[currentQuestion]?.correct)
+
+}
+}
+
+function updateTimer(){
+    timerEl.textContent=`${timeleft}`
+}
 loadQuestion()
 
