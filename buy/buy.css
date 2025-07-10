@@ -1,0 +1,58 @@
+.storeProduct{
+    margin: 50px;
+}
+
+.pro1{
+    background-color: rgb(140, 137, 144);
+    width: 220px;
+     padding-bottom: 1em;
+}
+#img1{
+    
+    width: 150px;
+   padding: 2em 2em;
+    justify-content: center;
+  align-items: center;
+   
+   
+    
+}
+.btninp input{
+    width: 30px;
+}
+.btninp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.dolla{
+    text-align: center;
+    color: rgb(66, 209, 194);
+    font-weight: bold;
+    font-size: 30px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 5em;
+}
+
+
+#sho{
+    margin: 50px ;
+
+}
+ th {
+ 
+    padding-left:3cm;
+ }
+ .tableRow{
+    background-color: rgb(140, 137, 144);
+    padding: 1em;
+ }
+
+ .tableRow1{
+    background-color: rgb(207, 234, 248);
+    padding: 1em;
+ }

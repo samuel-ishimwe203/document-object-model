@@ -13,9 +13,9 @@ document.body.insertBefore(insertBefor,result)
 
 // remove element or child
 
-const removeelement = document.getElementById('alpha')
-const removable = removeelement.children[0]
-removeelement.removeChild(removable)
+const removeElement = document.getElementById('alpha')
+const removable = removeElement.children[0]
+removeElement.removeChild(removable)
 
 document.getElementById('sam').remove()
         

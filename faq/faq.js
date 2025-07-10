@@ -17,8 +17,8 @@ faq.addEventListener("click", function (e) {
 });
   
 
-document.addEventListener('click',function(e){
-    const allAnswer =document.querySelectorAll(".answer.show")
+// document.addEventListener('click',function(e){
+//     const allAnswer =document.querySelectorAll(".answer.show")
 
-    allAnswer.forEach(answer=>answer.classList.remove('show'))
-})
+//     allAnswer.forEach(answer=>answer.classList.remove('show'))
+// })

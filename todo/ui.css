@@ -1,6 +1,6 @@
 ul{
     list-style: none;
-    padding: 0;
+     padding: 0;
 
 }
 
@@ -8,6 +8,6 @@ li{
     padding: 10px;
     border-bottom: 1px solid #ddd
 }
-li.completed {
+li.complete {
     text-decoration: line-through;
 }
