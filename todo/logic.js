@@ -18,7 +18,7 @@ function addTask(){
          li.appendChild(completeBtn)
 
 
-           const deleteBtn=document.createElement('button')
+      const deleteBtn=document.createElement('button')
       deleteBtn.innerText='delete'
       deleteBtn.style.marginLeft='50px'
       deleteBtn.onclick=function(){
