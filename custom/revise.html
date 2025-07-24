@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="./revise.js"></script>
+    <link rel="stylesheet" href="./revise.css">
 </head>
 <body>
-         <div id="text">hello <span style="display: none;">world</span></div>
-         <script>
 
-          const text=document.getElementById('text')
-              console.log(text.textContent)
-         </script>
+    <button id="btn">Random Background</button>
+
+    <script>
+        
+        const btn =document.getElementById('btn')
+        let same = btn.textContent
+        btn.addEventListener('click',function(){
+            if(btn.textContent === same){
+                btn.textContent = "yes"
+            } else{
+                btn.textContent = same                 
+            }
+        })       
+         
+    
+    </script>
+
+
 </body>
 </html>
